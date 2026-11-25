@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TD Carrosserie · Carrosserie in Lyss</title>
+<meta name="description" content="Carrosserie, Service, Reparatur und Pneuwechsel in Lyss. Südstrasse 6g. Offerte per WhatsApp oder Telefon: 079 699 70 77.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23ff7a1a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22%230b0c0e%22%3ETD%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/intertight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/hero-828.webp" imagesrcset="assets/hero-828.webp 828w, assets/hero-1600.webp 1400w" imagesizes="(min-width: 960px) 38vw, 100vw">
+<style>
+@font-face{font-family:"IT";src:url(assets/intertight.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--bg:#0b0c0e;--bg2:#121417;--line:rgba(255,255,255,.12);--txt:#f4f3ef;--mut:rgba(244,243,239,.68);--acc:#ff7a1a;--acc2:#ffc069;--r:22px;--pad:clamp(20px,5vw,56px);--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font:400 17px/1.55 "IT",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:12px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--acc);color:#111;padding:10px 14px;border-radius:10px;font-weight:600;z-index:99}
+.skip:focus{top:12px}
+
+/* header */
+.top{position:fixed;inset:0 0 auto 0;z-index:40;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+.top.s{background:rgba(11,12,14,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-weight:700;font-size:22px;letter-spacing:-.035em;display:flex;align-items:center;gap:10px}
+.logo i{width:12px;height:12px;border-radius:4px;background:conic-gradient(from 210deg,var(--acc),var(--acc2),var(--acc));box-shadow:0 0 18px rgba(255,122,26,.55)}
+.nav{display:none;gap:30px;font-size:15px;color:var(--mut)}
+.nav a:hover{color:var(--txt)}
+.icb{width:46px;height:46px;border-radius:999px;border:1px solid rgba(255,255,255,.4);display:grid;place-items:center;background:rgba(255,255,255,.07);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tel-d{display:none}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;isolation:isolate}
+.hero picture,.hero .ph{position:absolute;inset:0;z-index:-2}
+.hero img.bg{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform:scale(1.06);animation:settle 2.4s cubic-bezier(.2,.7,.1,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,12,14,.6) 0%,rgba(11,12,14,0) 18%,rgba(11,12,14,0) 32%,rgba(11,12,14,.55) 52%,rgba(11,12,14,.92) 74%,var(--bg) 100%)}
+.hin{width:100%;padding:0 var(--pad) calc(28px + env(safe-area-inset-bottom))}
+.chip{display:inline-flex;align-items:center;gap:9px;font-size:14px;padding:7px 13px 7px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.st{color:#ffc93d;letter-spacing:1.5px;font-size:13px}
+h1{font-weight:700;font-size:clamp(46px,12.4vw,104px);line-height:.95;letter-spacing:-.042em;margin:16px 0 0}
+h1 .w{display:inline-block;white-space:nowrap;overflow:hidden;vertical-align:top;padding-bottom:.06em}
+h1 .w span{display:inline-block;transform:translateY(105%);animation:up 1s cubic-bezier(.2,.8,.1,1) forwards}
+h1 .w:nth-child(2) span{animation-delay:.08s}h1 .w:nth-child(3) span{animation-delay:.16s}h1 .w:nth-child(4) span{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.grad{background:linear-gradient(100deg,var(--acc2) 0%,var(--acc) 60%,#ff5a1f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{margin-top:16px;font-size:clamp(17px,2.2vw,20px);color:rgba(255,255,255,.84);max-width:34ch}
+.ln{height:1px;background:rgba(255,255,255,.2);margin:20px 0 14px}
+.meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 14px;font-size:14px;color:rgba(255,255,255,.8)}
+.cta{display:flex;gap:10px;margin-top:18px}
+.b1{flex:1;min-height:58px;border-radius:999px;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:650;font-size:17px;position:relative;overflow:hidden;transition:transform .25s}
+.b1:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,122,26,.55) 50%,transparent 70%);transform:translateX(-120%);animation:sheen 4.5s 1.6s infinite}
+@keyframes sheen{0%{transform:translateX(-120%)}22%,100%{transform:translateX(120%)}}
+.b1:active{transform:scale(.98)}
+.b2{width:58px;height:58px;flex:none;border-radius:999px;border:1px solid rgba(255,255,255,.5);display:grid;place-items:center}
+.hdesk{display:none}
+
+/* sections */
+section{position:relative}
+.sec{padding:96px 0}
+.eye{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:600}
+h2{font-weight:700;font-size:clamp(34px,7vw,64px);line-height:1.02;letter-spacing:-.032em;margin-top:12px;max-width:16ch}
+.sub{color:var(--mut);margin-top:16px;max-width:46ch;font-size:18px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.1,1),transform .9s cubic-bezier(.2,.7,.1,1)}
+.rv.in{opacity:1;transform:none}
+
+/* proof */
+.proof{border-block:1px solid var(--line);background:linear-gradient(180deg,var(--bg),var(--bg2))}
+.proof .wrap{display:grid;grid-template-columns:1fr 1fr}
+.pf{padding:26px 8px 26px 0}
+.pf:nth-child(odd){border-right:1px solid var(--line)}
+.pf:nth-child(even){padding-left:20px}
+.pf:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.pf b{display:block;font-size:clamp(30px,6vw,44px);letter-spacing:-.04em;line-height:1}
+.pf span{display:block;color:var(--mut);font-size:14px;margin-top:8px}
+
+/* services */
+.grid{display:grid;gap:14px;margin-top:40px}
+.card{position:relative;border-radius:var(--r);padding:26px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid var(--line);overflow:hidden;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end}
+.card:before{content:"";position:absolute;width:260px;height:260px;right:-90px;top:-110px;border-radius:50%;background:radial-gradient(circle,rgba(255,122,26,.20),transparent 65%);transition:transform .8s}
+.card:hover:before{transform:translate(-30px,30px) scale(1.2)}
+.card .n{position:absolute;top:22px;left:26px;font-size:13px;color:var(--mut);letter-spacing:.1em}
+.card h3{font-size:26px;letter-spacing:-.03em;line-height:1.1}
+.card p{color:var(--mut);margin-top:8px}
+.card.img{padding:0;min-height:360px}
+.card.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card.img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,12,14,0) 35%,rgba(11,12,14,.9))}
+.card.img .tx{position:relative;z-index:1;padding:26px}
+.tag{position:absolute;z-index:2;top:16px;right:16px;font-size:11px;padding:4px 9px;border-radius:999px;background:rgba(11,12,14,.6);color:rgba(255,255,255,.75);backdrop-filter:blur(6px)}
+.note{color:var(--mut);font-size:15px;margin-top:18px}
+
+/* reviews */
+.revs{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:40px;padding-bottom:10px;scrollbar-width:none}
+.revs::-webkit-scrollbar{display:none}
+.rev{flex:0 0 86%;scroll-snap-align:start;border-radius:var(--r);padding:28px;border:1px solid var(--line);background:var(--bg2);display:flex;flex-direction:column;gap:18px}
+.rev q{font-size:21px;line-height:1.35;letter-spacing:-.015em;quotes:"«" "»"}
+.rev footer{margin-top:auto;font-size:14px;color:var(--mut);display:flex;justify-content:space-between;gap:10px}
+.gsrc{display:inline-flex;align-items:center;gap:8px;margin-top:20px;color:var(--mut);font-size:15px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.gsrc:hover{color:var(--txt)}
+
+/* steps */
+.steps{display:grid;gap:14px;margin-top:40px;counter-reset:s}
+.step{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;padding:22px 0;border-top:1px solid var(--line)}
+.step .k{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-weight:700;font-size:20px;color:#111;background:linear-gradient(135deg,var(--acc),var(--acc2))}
+.step h3{font-size:22px;letter-spacing:-.02em}
+.step p{color:var(--mut);margin-top:4px}
+
+/* area + hours */
+.two{display:grid;gap:14px;margin-top:40px}
+.panel{border-radius:var(--r);border:1px solid var(--line);background:var(--bg2);padding:28px;position:relative;overflow:hidden}
+.radar{position:relative;aspect-ratio:1;margin:-28px -28px 22px;overflow:hidden;background:#0b0c0e url(assets/map-z12.webp) center/cover;border-bottom:1px solid var(--line)}
+.radar:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,transparent 30%,rgba(18,20,23,.55) 75%);pointer-events:none}
+.radar .rings{position:absolute;inset:12%}
+.osm{position:absolute;right:8px;bottom:6px;z-index:2;font-size:11px;color:rgba(255,255,255,.8);background:rgba(11,12,14,.7);padding:2px 7px;border-radius:6px}
+.osm a{text-decoration:underline}
+.radar .ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,122,26,.28)}
+.radar .ring:nth-child(2){inset:17%}.radar .ring:nth-child(3){inset:34%}
+.radar .sweep{position:absolute;inset:0;z-index:1;border-radius:50%;background:conic-gradient(from 0deg,rgba(255,122,26,.0),rgba(255,122,26,.22) 18%,transparent 19%);animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(1turn)}}
+.radar .dot{z-index:2;position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 8px rgba(255,122,26,.18),0 0 30px var(--acc)}
+.radar .pl{position:absolute;z-index:2;font-size:13px;font-weight:600;color:#111;background:var(--acc);padding:3px 9px;border-radius:999px;white-space:nowrap}
+.panel h3{font-size:24px;letter-spacing:-.02em}
+.panel p{color:var(--mut);margin-top:6px}
+.hrs{list-style:none;margin-top:16px}
+.hrs li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.hrs li.today{color:var(--acc);font-weight:600}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:14px;margin-top:10px;color:var(--mut)}
+.live i{width:9px;height:9px;border-radius:50%;background:#888}
+.live.on i{background:var(--acc);box-shadow:0 0 0 0 rgba(255,122,26,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,122,26,0)}100%{box-shadow:0 0 0 0 rgba(255,122,26,0)}}
+.lk{display:inline-flex;margin-top:16px;border-bottom:1px solid var(--line);color:var(--txt)}
+
+/* final */
+.final{padding:120px 0 140px;text-align:left;overflow:hidden;isolation:isolate;margin-top:40px}
+.final .fbg{position:absolute;inset:0;z-index:-2}
+.final .fbg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.final:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,rgba(11,12,14,.74) 20%,rgba(11,12,14,.7) 55%,rgba(11,12,14,.95) 100%)}
+.final .tagf{position:absolute;top:24px;right:var(--pad);font-size:11px;padding:4px 9px;border-radius:999px;background:rgba(11,12,14,.6);color:rgba(255,255,255,.75)}
+.final:before{content:"";position:absolute;inset:auto -20% -40% -20%;height:90%;z-index:0;pointer-events:none;background:radial-gradient(50% 60% at 50% 100%,rgba(255,122,26,.20),transparent 70%),radial-gradient(40% 50% at 80% 100%,rgba(255,192,105,.16),transparent 70%);z-index:-1}
+.final h2{max-width:13ch;font-size:clamp(40px,9vw,92px)}
+.final .cta{max-width:520px;margin-top:30px}
+.final .alt{margin-top:18px;color:var(--mut)}
+.final .alt a{color:var(--txt);border-bottom:1px solid var(--line)}
+
+footer.f{border-top:1px solid var(--line);padding:36px 0 120px;color:var(--mut);font-size:14px}
+footer.f .wrap{display:grid;gap:18px}
+footer.f b{color:var(--txt)}
+footer.f a{border-bottom:1px solid var(--line)}
+
+/* sticky mobile CTA */
+.dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:8px;padding:8px;border-radius:999px;background:rgba(20,22,25,.78);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);transform:translateY(140%);transition:transform .5s cubic-bezier(.2,.8,.1,1);box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.dock.on{transform:none}
+.dock .b1{min-height:52px;font-size:16px}
+.dock .b2{width:52px;height:52px;background:rgba(255,255,255,.06)}
+
+@media (min-width:700px){
+ .grid{grid-template-columns:1fr 1fr}
+ .rev{flex-basis:46%}
+ .two{grid-template-columns:1fr 1fr}
+ .proof .wrap{grid-template-columns:repeat(4,1fr)}
+ .pf,.pf:nth-child(even){padding:30px 24px;border:0}
+ .pf+.pf{border-left:1px solid var(--line)}
+ .pf:first-child{padding-left:0}
+}
+@media (min-width:960px){
+ .nav{display:flex}.tel-d{display:inline-flex}.icb.m{display:none}
+ .hero{align-items:center;min-height:100vh}
+ .hero picture{left:auto;width:min(38vw,480px);top:96px;bottom:40px;right:max(var(--pad),calc((100vw - var(--max))/2 + var(--pad)));border-radius:32px;overflow:hidden}
+ .hero:after{background:radial-gradient(60% 70% at 15% 60%,rgba(255,122,26,.07),transparent 70%)}
+ .hero picture:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,12,14,.5))}
+ .hin{max-width:var(--max);margin:0 auto;padding:110px var(--pad) 40px}
+ .hin>div{max-width:calc(100% - min(38vw,480px) - 56px)}
+ h1{font-size:clamp(58px,5.9vw,88px)}
+ .dbr{display:inline}
+ .hdesk{display:block}
+ .sec{padding:140px 0}
+ .final{padding:180px 0 180px}
+ .final:after{background:linear-gradient(90deg,rgba(11,12,14,.92) 0%,rgba(11,12,14,.7) 45%,rgba(11,12,14,.25) 100%),linear-gradient(180deg,var(--bg) 0%,transparent 18%,transparent 82%,var(--bg) 100%)}
+ .grid{grid-template-columns:repeat(6,1fr)}
+ .grid .card{grid-column:span 2}
+ .grid .card.img{grid-column:span 3;min-height:440px}
+ .steps{grid-template-columns:repeat(3,1fr);gap:28px}
+ .step{grid-template-columns:1fr;border-top:1px solid var(--line)}
+ .rev{flex-basis:32%}
+ .dock{display:none}
+ footer.f{padding-bottom:40px}
+ footer.f .wrap{grid-template-columns:1.2fr 1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+ h1 .w span{transform:none}.rv{opacity:1;transform:none}.hero img.bg{transform:none}
+}
+.dbr{display:none}
+.mk{width:30px;height:18px;display:inline-block}
+/* wizard */
+.wz{margin-top:40px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));padding:clamp(20px,4vw,40px);position:relative;overflow:hidden}
+.wz:before{content:"";position:absolute;width:420px;height:420px;right:-160px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(255,122,26,.22),transparent 65%);pointer-events:none}
+.q{position:relative}
+.q+.q{margin-top:26px}
+.q legend,.q label.t{font-weight:650;font-size:18px;letter-spacing:-.01em;display:block;margin-bottom:12px}
+.q legend span,.q label.t span{color:var(--acc);margin-right:8px;font-variant-numeric:tabular-nums}
+fieldset{border:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts label{padding:12px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-size:15px;cursor:pointer;transition:background .25s,border-color .25s,color .25s;min-height:46px;display:inline-flex;align-items:center}
+.opts input:checked+label{background:var(--acc);border-color:var(--acc);color:#111;font-weight:650}
+.opts input:focus-visible+label{outline:3px solid var(--acc);outline-offset:3px}
+.fld{width:100%;min-height:52px;border-radius:16px;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.25);color:var(--txt);font:inherit;padding:12px 16px}
+.fld::placeholder{color:rgba(244,243,239,.45)}
+.pv{margin-top:26px;border-radius:18px;background:#0e1a12;border:1px solid rgba(37,211,102,.25);padding:16px 18px;font-size:15px;color:rgba(244,243,239,.9);position:relative}
+.pv small{display:block;color:var(--mut);font-size:12px;margin-bottom:6px;letter-spacing:.08em;text-transform:uppercase}
+.wz .cta{max-width:520px}
+/* aktion */
+.ak{display:grid;gap:28px;margin-top:40px;align-items:center}
+.ak .fl{border-radius:24px;overflow:hidden;border:1px solid var(--line);max-width:min(460px,80vw);box-shadow:0 30px 80px rgba(255,122,26,.12)}
+.pr{list-style:none}
+.pr li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.pr li b{font-size:clamp(26px,4.4vw,40px);letter-spacing:-.035em;white-space:nowrap}
+.pr li span{font-size:18px}
+/* gallery */
+.gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:40px;padding-bottom:8px;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal figure{flex:0 0 72%;scroll-snap-align:start;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);aspect-ratio:3/4;background:var(--bg2)}
+.gal img{width:100%;height:100%;object-fit:cover}
+/* placeholder */
+.ph-card{margin-top:40px;border-radius:var(--r);border:1px dashed rgba(255,255,255,.25);padding:28px;color:var(--mut);display:flex;gap:16px;align-items:flex-start}
+.ph-card b{color:var(--txt);display:block;font-size:20px;letter-spacing:-.02em;margin-bottom:4px}
+.badge{display:inline-block;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.25);color:var(--mut);margin-left:8px;vertical-align:middle;letter-spacing:.04em}
+.radar .lbl{position:absolute;z-index:2;left:50%;top:50%;transform:translate(16px,-34px);font-size:13px;font-weight:650;color:#111;background:var(--acc);padding:3px 9px;border-radius:999px;white-space:nowrap}
+@media (min-width:700px){.gal figure{flex-basis:40%}}
+@media (min-width:960px){
+ .grid .card.img{grid-row:span 2;min-height:520px}
+ .grid .card{grid-column:span 3}
+ .ak{grid-template-columns:.9fr 1.1fr;gap:64px}
+ .gal figure{flex-basis:calc(25% - 9px)}
+ .wzw{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+ .wzw .wz{margin-top:0}
+ .dbr{display:inline}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" href="#main" aria-label="TD Carrosserie, zum Seitenanfang"><i aria-hidden="true"></i>TD Carrosserie</a>
+  <nav class="nav" aria-label="Hauptnavigation">
+   <a href="#leistungen">Leistungen</a><a href="#aktion">Winter-Aktion</a><a href="#anfrage">Anfrage</a><a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="icb tel-d" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77" style="width:auto;padding:0 18px;gap:8px;font-weight:600;font-size:15px"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>079 699 70 77</a>
+  <a class="icb m" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+ <picture>
+  <source type="image/webp" srcset="assets/hero-828.webp 828w, assets/hero-1600.webp 1400w" sizes="(min-width: 960px) 38vw, 100vw">
+  <img class="bg" src="assets/hero-828.webp" alt="Werkstatt der TD Carrosserie in Lyss: Auto auf der Hebebühne" width="828" height="1104" fetchpriority="high">
+ </picture>
+ <div class="hin">
+  <div>
+   <span class="chip"><i style="width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc)" aria-hidden="true"></i><span>Neu an der Südstrasse in Lyss</span></span>
+   <h1 id="h1"><span class="w"><span>Ihre</span></span><br class="dbr"> <span class="w"><span>Carrosserie</span></span><br class="dbr"> <span class="w"><span>in</span></span> <span class="w"><span class="grad">Lyss.</span></span></h1>
+   <p class="lead">Blechschaden, Service oder Pneuwechsel. Schicken Sie ein Foto per WhatsApp. Sie bekommen eine klare Offerte.</p>
+   <div class="ln" aria-hidden="true"></div>
+   <div class="meta"><span>Südstrasse 6g, 3250 Lyss</span><a href="tel:+41796997077">079 699 70 77</a></div>
+   <div class="cta">
+    <a class="b1 wa" href="https://wa.me/41796997077?text=Gr%C3%BCezi%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%3A%20" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>Offerte per WhatsApp</a>
+    <a class="b2" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="proof" aria-label="Auf einen Blick">
+ <div class="wrap">
+  <div class="pf rv"><b>2026</b><span>neu gegründet in Lyss</span></div>
+  <div class="pf rv"><b>CHF 50.–</b><span>Pneuwechsel in der Winter-Aktion</span></div>
+  <div class="pf rv"><b>1 Foto</b><span>per WhatsApp für den Anfang</span></div>
+  <div class="pf rv"><b>3250</b><span>Lyss, Südstrasse 6g</span></div>
+ </div>
+</section>
+
+<section class="sec" id="leistungen" aria-labelledby="h-l">
+ <div class="wrap">
+  <p class="eye rv">Leistungen</p>
+  <h2 class="rv" id="h-l">Vom Kratzer bis zum Service.</h2>
+  <p class="sub rv">Carrosserie, Unterhalt und Reparatur für Ihr Auto. Alles an einem Ort in Lyss.</p>
+  <div class="grid">
+   <article class="card img rv"><img src="assets/lift-900.webp" alt="Auto auf der Hebebühne in der Werkstatt der TD Carrosserie" width="900" height="1200" loading="lazy" decoding="async"><span class="tag">Eigene Werkstatt</span><div class="tx"><h3>Carrosserie</h3><p>Delle, Kratzer oder Blechschaden? Schicken Sie Fotos. Wir sagen Ihnen, was es braucht.</p></div></article>
+   <article class="card rv"><span class="n">01</span><h3>Service &amp; Unterhalt</h3><p>Damit Ihr Auto zuverlässig fährt. Kleiner oder grosser Service.</p></article>
+   <article class="card rv"><span class="n">02</span><h3>Reparaturen</h3><p>Etwas stimmt nicht? Wir schauen es an und reparieren.</p></article>
+   <article class="card rv"><span class="n">03</span><h3>Pneuwechsel</h3><p>Sommer auf Winter, Winter auf Sommer. Schnell erledigt.</p></article>
+   <article class="card rv"><span class="n">04</span><h3>Ihre Frage</h3><p>Etwas anderes? Fragen Sie einfach. Sie bekommen eine ehrliche Antwort.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="aktion" aria-labelledby="h-ak" style="padding-top:0">
+ <div class="wrap">
+  <p class="eye rv">Winter-Aktion</p>
+  <h2 class="rv" id="h-ak">Bereit für den Winter.</h2>
+  <div class="ak">
+   <div class="fl rv"><img src="assets/aktion-900.webp" alt="Flyer Winter-Aktion der TD Carrosserie: Pneuwechsel CHF 50.–, Winterservice" width="900" height="1350" loading="lazy" decoding="async"></div>
+   <div class="rv">
+    <ul class="pr">
+     <li><span>Pneuwechsel</span><b>CHF 50.–</b></li>
+     <li><span>Kleiner oder grosser Winterservice</span><b>CHF 500.–</b></li>
+    </ul>
+    <p class="note">Schnell, zuverlässig, fachgerecht. Preise gemäss Winter-Aktion. Details auf Anfrage.</p>
+    <div class="cta" style="max-width:520px;margin-top:26px">
+     <a class="b1 wa" href="https://wa.me/41796997077?text=Gr%C3%BCezi%2C%20ich%20m%C3%B6chte%20einen%20Termin%20f%C3%BCr%20die%20Winter-Aktion%20%28Pneuwechsel%20/%20Winterservice%29.%20Mein%20Auto%3A%20" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>Termin per WhatsApp</a>
+     <a class="b2" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="anfrage" aria-labelledby="h-q" style="padding-top:0">
+ <div class="wrap wzw">
+  <div>
+   <p class="eye rv">Anfrage</p>
+   <h2 class="rv" id="h-q">In 20 Sekunden zur Offerte.</h2>
+   <p class="sub rv">Drei kurze Fragen. Ihre Nachricht ist danach fertig geschrieben. Sie müssen sie nur noch abschicken und ein Foto anhängen.</p>
+  </div>
+  <form class="wz rv" id="wz" onsubmit="return false">
+   <fieldset class="q"><legend><span>1</span>Worum geht es?</legend>
+    <div class="opts">
+     <input type="radio" name="k" id="k1" value="einen Carrosserie-Schaden" checked><label for="k1">Carrosserie-Schaden</label>
+     <input type="radio" name="k" id="k2" value="einen Service"><label for="k2">Service</label>
+     <input type="radio" name="k" id="k3" value="eine Reparatur"><label for="k3">Reparatur</label>
+     <input type="radio" name="k" id="k4" value="einen Pneuwechsel"><label for="k4">Pneuwechsel</label>
+     <input type="radio" name="k" id="k5" value="etwas anderes"><label for="k5">Etwas anderes</label>
+    </div>
+   </fieldset>
+   <div class="q"><label class="t" for="car"><span>2</span>Welches Auto?</label><input class="fld" id="car" type="text" placeholder="z. B. VW Golf, 2018" autocomplete="off"></div>
+   <fieldset class="q"><legend><span>3</span>Wann passt es Ihnen?</legend>
+    <div class="opts">
+     <input type="radio" name="w" id="w1" value="so bald wie möglich" checked><label for="w1">So bald wie möglich</label>
+     <input type="radio" name="w" id="w2" value="diese Woche"><label for="w2">Diese Woche</label>
+     <input type="radio" name="w" id="w3" value="ich bin flexibel"><label for="w3">Flexibel</label>
+    </div>
+   </fieldset>
+   <div class="pv" aria-live="polite"><small>Ihre Nachricht</small><span id="msg"></span></div>
+   <div class="cta">
+    <a class="b1 wa" id="send" href="https://wa.me/41796997077?text=Gr%C3%BCezi%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%3A%20" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>Per WhatsApp senden</a>
+    <a class="b2" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+   </div>
+  </form>
+ </div>
+</section>
+
+<section class="sec" id="werkstatt" aria-labelledby="h-w" style="padding-top:0">
+ <div class="wrap">
+  <p class="eye rv">Werkstatt</p>
+  <h2 class="rv" id="h-w">Echte Werkstatt in Lyss.</h2>
+  <p class="sub rv">Keine Symbolbilder: Das ist die Werkstatt an der Südstrasse. Hier wird Ihr Auto gemacht.</p>
+  <div class="gal" tabindex="0" aria-label="Fotos der Werkstatt">
+   <figure class="rv"><img src="assets/g-p1.webp" alt="Werkstatt mit Auto auf der Hebebühne" width="600" height="800" loading="lazy" decoding="async"></figure>
+   <figure class="rv"><img src="assets/g-p2.webp" alt="Hebebühne mit Auto, Galerie im Hintergrund" width="600" height="800" loading="lazy" decoding="async"></figure>
+   <figure class="rv"><img src="assets/g-p4.webp" alt="Offenes Werkstatttor an der Südstrasse" width="600" height="800" loading="lazy" decoding="async"></figure>
+   <figure class="rv"><img src="assets/g-p5.webp" alt="Blick von aussen in die Werkstatt" width="600" height="800" loading="lazy" decoding="async"></figure>
+  </div>
+  <div class="ph-card rv"><span aria-hidden="true" style="letter-spacing:1.5px;color:rgba(255,255,255,.35)">☆☆☆☆☆</span><div><b>Ihre ersten Kundenstimmen</b>Sobald die ersten Google-Bewertungen da sind, erscheinen sie hier.<span class="badge">Platzhalter</span></div></div>
+ </div>
+</section>
+
+<section class="sec" id="ablauf" aria-labelledby="h-a" style="padding-top:0">
+ <div class="wrap">
+  <p class="eye rv">So einfach geht's</p>
+  <h2 class="rv" id="h-a">Drei Schritte. Fertig.</h2>
+  <div class="steps">
+   <div class="step rv"><span class="k">1</span><div><h3>Foto schicken</h3><p>Per WhatsApp oder Anruf. Sagen Sie kurz, was los ist.</p></div></div>
+   <div class="step rv"><span class="k">2</span><div><h3>Offerte bekommen</h3><p>Wir schauen es an. Sie wissen danach, was es kostet.</p></div></div>
+   <div class="step rv"><span class="k">3</span><div><h3>Auto abholen</h3><p>Termin abmachen, Auto bringen, fertig wieder abholen.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="kontakt" aria-labelledby="h-k" style="padding-top:0">
+ <div class="wrap">
+  <p class="eye rv">Kontakt</p>
+  <h2 class="rv" id="h-k">Zu Hause in Lyss.</h2>
+  <div class="two">
+   <div class="panel rv">
+    <div class="radar" role="img" aria-label="Karte: TD Carrosserie an der Südstrasse in Lyss, Region Seeland"><div class="rings" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="ring"></span><div class="sweep"></div><div class="dot"></div></div><span class="lbl" aria-hidden="true">TD Carrosserie</span>
+     <span class="osm">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende</span></div>
+    <h3>TD Carrosserie</h3>
+    <p>Südstrasse 6g<br>3250 Lyss BE</p>
+    <a class="lk" href="https://www.google.com/maps/place/TD+Carrosserie/@47.0657868,7.2932397,17z/data=!4m6!3m5!1s0x478e192a9a87bdf7:0x3ab99ace2b45621f!8m2!3d47.0657868!4d7.2932397" target="_blank" rel="noopener">Route in Google Maps →</a>
+   </div>
+   <div class="panel rv">
+    <h3>Erreichbar</h3>
+    <p class="live on" style="margin-top:10px"><i aria-hidden="true"></i><span>WhatsApp: jederzeit schreiben</span></p>
+    <ul class="hrs">
+     <li><span>Telefon</span><a href="tel:+41796997077">079 699 70 77</a></li>
+     <li><span>WhatsApp</span><a href="https://wa.me/41796997077?text=Gr%C3%BCezi%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%3A%20" target="_blank" rel="noopener">079 699 70 77</a></li>
+     <li><span>Adresse</span><span>Südstrasse 6g, Lyss</span></li>
+     <li><span>Öffnungszeiten</span><span>folgen <span class="badge" style="margin-left:4px">Platzhalter</span></span></li>
+    </ul>
+    <p style="font-size:14px;margin-top:12px">Termin am besten per Telefon oder WhatsApp abmachen.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="h-f">
+ <picture class="fbg"><source type="image/webp" srcset="assets/final-800.webp 800w, assets/final-1600.webp 1400w" sizes="100vw"><img src="assets/final-800.webp" alt="" width="800" height="1067" loading="lazy" decoding="async"></picture>
+ <div class="wrap" style="position:relative;z-index:1">
+  <p class="eye rv">Offerte</p>
+  <h2 class="rv" id="h-f">Schaden? Foto schicken.</h2>
+  <p class="sub rv" style="color:rgba(244,243,239,.85)">Sie bekommen eine klare Offerte. Danach entscheiden Sie in Ruhe.</p>
+  <div class="cta rv">
+   <a class="b1 wa" href="https://wa.me/41796997077?text=Gr%C3%BCezi%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%3A%20" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>Offerte per WhatsApp</a>
+   <a class="b2" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+  </div>
+  <p class="alt rv">Lieber anrufen? <a href="tel:+41796997077">079 699 70 77</a></p>
+ </div>
+</section>
+</main>
+
+<footer class="f">
+ <div class="wrap">
+  <div><b>TD Carrosserie Sallin</b><br>Südstrasse 6g, 3250 Lyss BE<br><a href="tel:+41796997077">079 699 70 77</a><br>Einzelunternehmen · UID CHE-206.458.491</div>
+  <div>Fotos: TD Carrosserie (eigene Bilder auf Google Maps).<br>Karte: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende.</div>
+  <div>Entwurf · Vorschau-Seite<br>© 2026 TD Carrosserie Sallin</div>
+ </div>
+</footer>
+
+<nav class="dock" id="dock" aria-label="Schnellkontakt">
+ <a class="b1 wa" href="https://wa.me/41796997077?text=Gr%C3%BCezi%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%3A%20" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>Offerte per WhatsApp</a>
+ <a class="b2" href="tel:+41796997077" aria-label="Anrufen: 079 699 70 77"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</nav>
+
+<script>
+(function(){
+ var top=document.getElementById('top'),dock=document.getElementById('dock'),hero=document.querySelector('.hero');
+ function sc(){var y=window.scrollY;top.classList.toggle('s',y>20);dock.classList.toggle('on',y>hero.offsetHeight*.7)}
+ addEventListener('scroll',sc,{passive:true});sc();
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+ var f=document.getElementById('wz'),msg=document.getElementById('msg'),send=document.getElementById('send');
+ function up(){var k=f.querySelector('input[name=k]:checked').value,w=f.querySelector('input[name=w]:checked').value,c=document.getElementById('car').value.trim();
+  var t='Grüezi, ich brauche '+k+'.'+(c?' Auto: '+c+'.':'')+' Zeitpunkt: '+w+'. Ich schicke Ihnen gleich ein Foto.';
+  msg.textContent=t;send.href='https://wa.me/41796997077?text='+encodeURIComponent(t)}
+ f.addEventListener('input',up);f.addEventListener('change',up);up();
+})();
+</script>
+</body>
+</html>
