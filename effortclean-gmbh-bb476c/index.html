@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Effortclean GmbH · Reinigung in Münchenbuchsee</title>
+<meta name="description" content="Effortclean GmbH, Talstrasse 7, 3053 Münchenbuchsee. Reinigung, Fensterreinigung, Hauswartung und Unterhalt. Offerte per WhatsApp oder Telefon 078 695 16 61.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#06080d">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/intertight-700.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-640.webp" imagesrcset="assets/img/hero-640.webp 640w, assets/img/hero-960.webp 960w, assets/img/hero-1132.webp 1132w" imagesizes="(min-width:960px) 44vw, 100vw">
+<style>
+@font-face{font-family:"Inter Tight";src:url(assets/fonts/intertight-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Inter Tight";src:url(assets/fonts/intertight-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Inter Tight";src:url(assets/fonts/intertight-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Inter;src:url(assets/fonts/inter-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(assets/fonts/inter-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Inter;src:url(assets/fonts/inter-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{
+  --bg:#06080d;--bg2:#0b0f17;--ink:#f4f7fb;--mute:rgba(244,247,251,.72);--dim:rgba(244,247,251,.66);
+  --line:rgba(255,255,255,.12);--glass:rgba(255,255,255,.055);--glass2:rgba(255,255,255,.09);
+  --sky:#3db8ff;--pink:#f78ac8;--wa:#25d366;
+  --grad:linear-gradient(100deg,#3db8ff 0%,#9fc7ff 45%,#f78ac8 100%);
+  --r:22px;--pad:clamp(20px,5vw,56px);--max:1180px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:12px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:10px 14px;border-radius:10px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;font-weight:700;letter-spacing:-.04em;line-height:1}
+h2{font-size:clamp(34px,6.2vw,64px)}
+h3{font-size:22px;letter-spacing:-.025em;line-height:1.15}
+.kick{display:inline-flex;align-items:center;gap:10px;font:500 13px/1 "Inter Tight",Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:18px}
+.kick::before{content:"";width:22px;height:1px;background:var(--grad)}
+.lead{font-size:clamp(17px,2.1vw,20px);color:var(--mute);max-width:36ch;margin-top:18px}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+section{position:relative;padding:clamp(80px,12vw,140px) 0;overflow-x:clip}
+html,body{overflow-x:clip}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:58px;padding:0 26px;border-radius:999px;font:600 16px/1 Inter,sans-serif;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s;white-space:nowrap}
+.btn svg{flex:none}
+.btn-p{background:#fff;color:#0a0d12;box-shadow:0 10px 40px -10px rgba(61,184,255,.55),0 0 0 1px rgba(255,255,255,.4) inset}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(247,138,200,.6)}
+.btn-g{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn-g:hover{background:rgba(255,255,255,.12)}
+.btn-i{width:58px;padding:0}
+.wa-dot{width:9px;height:9px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 10px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:40;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+.nav.s{background:rgba(6,8,13,.72);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{height:40px;width:auto;filter:drop-shadow(0 2px 10px rgba(0,0,0,.45))}
+.nav-l{display:none;gap:30px;font-size:15px;color:var(--mute)}
+.nav-l a:hover{color:#fff}
+.nav-r{display:flex;gap:10px;align-items:center}
+.nav-r .btn{height:46px;font-size:15px;padding:0 18px}
+.nav-r .btn-i{width:46px}
+.nav-cta{display:none}
+
+/* hero */
+.hero{min-height:100svh;padding:0;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.frost{position:absolute;inset:0;background:url(assets/img/hero-blur.webp) 50% 30%/cover;filter:blur(18px) saturate(1.2);transform:scale(1.08);
+  -webkit-mask-image:linear-gradient(115deg,#000 0 40%,transparent 60%);mask-image:linear-gradient(115deg,#000 0 40%,transparent 60%);
+  -webkit-mask-size:300% 100%;mask-size:300% 100%;-webkit-mask-position:0 0;mask-position:0 0;animation:wipe 1.8s .25s var(--ease) forwards}
+@keyframes wipe{to{-webkit-mask-position:100% 0;mask-position:100% 0;opacity:0}}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,8,13,.65) 0%,rgba(6,8,13,0) 18%,rgba(6,8,13,0) 34%,rgba(6,8,13,.55) 54%,rgba(6,8,13,.92) 76%,var(--bg) 100%)}
+.hero-in{width:100%;padding-bottom:max(30px,env(safe-area-inset-bottom))}
+.rate{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:var(--mute);padding:8px 14px 8px 10px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.st{color:#ffc93d;letter-spacing:1.5px;font-size:13px}
+.hero h1{font-size:clamp(36px,10.8vw,76px);letter-spacing:-.05em;line-height:.95;margin-top:18px;max-width:11ch}
+.sheen{position:relative;display:inline-block;background:linear-gradient(100deg,#fff 0 40%,#bfe6ff 47%,#ffd3ec 53%,#fff 60% 100%);background-size:260% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 2.2s 1.2s var(--ease) forwards}
+@keyframes sheen{to{background-position:0 0}}
+.hero p.sub{margin-top:18px;font-size:clamp(17px,2.2vw,21px);color:var(--mute);max-width:34ch}
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;font-size:14px;color:var(--mute);margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-cta{display:flex;gap:10px;margin-top:20px}
+.hero-cta .btn-p{flex:1}
+.micro{font-size:13px;color:var(--dim);margin-top:12px;display:flex;align-items:center;gap:8px}
+
+/* aurora */
+.aur{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px);opacity:.33;z-index:0}
+.aur.a1{width:520px;height:520px;background:var(--sky);top:-120px;right:-180px}
+.aur.a2{width:460px;height:460px;background:var(--pink);bottom:-160px;left:-180px;opacity:.22}
+section>.wrap{position:relative;z-index:1}
+
+/* proof */
+.proof{padding:28px 0 0}
+.proof-g{display:grid;grid-template-columns:1fr;gap:12px}
+.pc{display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:var(--r);background:var(--glass);border:1px solid var(--line)}
+.pc b{font:700 26px/1 "Inter Tight",sans-serif;letter-spacing:-.03em;display:block}
+.pc span{font-size:14px;color:var(--dim)}
+.pc .ic{width:46px;height:46px;flex:none;border-radius:14px;display:grid;place-items:center;background:linear-gradient(140deg,rgba(61,184,255,.22),rgba(247,138,200,.22));border:1px solid rgba(255,255,255,.14)}
+
+/* services */
+.svc-g{display:grid;grid-template-columns:1fr;gap:14px;margin-top:48px}
+.card{position:relative;padding:28px;border-radius:var(--r);background:linear-gradient(180deg,var(--glass2),var(--glass));border:1px solid var(--line);overflow:hidden;transition:transform .5s var(--ease),border-color .5s}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .5s}
+.card:hover{transform:translateY(-4px)}
+.card:hover::after{opacity:.9}
+.card .n{font:500 13px/1 "Inter Tight",sans-serif;color:var(--dim);letter-spacing:.12em}
+.card h3{margin:44px 0 10px}
+.card p{color:var(--mute);font-size:16px}
+.card .glyph{position:absolute;top:22px;right:22px;width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.card.feat{padding:0;display:grid;min-height:380px}
+.card.feat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 30%}
+.card.feat .fx{position:relative;align-self:end;padding:28px;background:linear-gradient(180deg,transparent,rgba(6,8,13,.94) 55%)}
+.card.feat h3{margin:10px 0 10px}
+
+/* words */
+.words{display:flex;flex-direction:column;gap:6px;margin-top:40px}
+.word{font:700 clamp(48px,11vw,128px)/1 "Inter Tight",sans-serif;letter-spacing:-.055em;color:rgba(255,255,255,.42);transition:color 1s var(--ease)}
+.word.on{color:transparent;background:var(--grad);-webkit-background-clip:text;background-clip:text}
+.words-note{color:var(--dim);font-size:15px;margin-top:22px;max-width:46ch}
+
+/* reviews */
+.rv-top{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px}
+.rv-score{display:flex;align-items:center;gap:14px}
+.rv-score b{font:700 64px/1 "Inter Tight",sans-serif;letter-spacing:-.04em}
+.rv-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--pad) 18px;margin:40px calc(var(--pad)*-1) 0;scrollbar-width:none}
+.rv-row::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(86vw,400px);scroll-snap-align:center;padding:26px;border-radius:var(--r);background:linear-gradient(180deg,var(--glass2),var(--glass));border:1px solid var(--line);display:flex;flex-direction:column;gap:18px}
+.rv q{quotes:"«" "»";font-size:17px;line-height:1.55;color:var(--ink)}
+.rv .who{display:flex;align-items:center;gap:12px;margin-top:auto;font-size:14px;color:var(--dim)}
+.av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:600 15px/1 "Inter Tight",sans-serif;color:#0a0d12;background:var(--grad)}
+.rv .who b{color:var(--ink);font-weight:600;display:block}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:3px}
+.link:hover{border-color:#fff}
+.rv-ctrl{display:none;gap:10px}
+.rv-ctrl button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--glass);display:grid;place-items:center}
+.rv-ctrl button:hover{background:var(--glass2)}
+
+/* steps */
+.steps{display:grid;gap:14px;margin-top:48px;counter-reset:s}
+.step{padding:26px 26px 26px 88px;position:relative;border-radius:var(--r);border:1px solid var(--line);background:var(--glass)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:24px;top:24px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:700 18px/1 "Inter Tight",sans-serif;background:var(--grad);color:#0a0d12}
+.step p{color:var(--mute);margin-top:6px;font-size:16px}
+
+/* quote builder */
+.qb{display:grid;gap:22px;margin-top:44px}
+.panel{border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));padding:clamp(20px,4vw,34px);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.prog{display:flex;gap:6px;margin-bottom:26px}
+.prog i{flex:1;height:4px;border-radius:4px;background:rgba(255,255,255,.12);overflow:hidden;position:relative}
+.prog i::after{content:"";position:absolute;inset:0;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.prog i.on::after{transform:scaleX(1)}
+fieldset{border:0}
+legend{font:700 24px/1.15 "Inter Tight",sans-serif;letter-spacing:-.025em;margin-bottom:18px}
+.qstep{display:none;animation:in .5s var(--ease)}
+.qstep.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt span{display:flex;flex-direction:column;gap:3px;min-height:74px;justify-content:center;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-weight:600;font-size:16px;transition:all .3s var(--ease)}
+.opt small{font-weight:400;font-size:13px;color:var(--dim)}
+.opt input:checked+span{border-color:transparent;background:linear-gradient(#0d121b,#0d121b) padding-box,var(--grad) border-box;border:1px solid transparent;box-shadow:0 8px 30px -12px rgba(61,184,255,.6)}
+.opt input:focus-visible+span{outline:2px solid var(--sky);outline-offset:2px}
+.fld{display:block;margin-top:12px}
+.fld label{display:block;font-size:14px;color:var(--mute);margin-bottom:8px}
+.fld input,.fld textarea{width:100%;height:56px;padding:0 16px;border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.25);color:var(--ink);font:400 17px Inter,sans-serif}
+.fld textarea{height:96px;padding:14px 16px;resize:vertical}
+.fld input:focus,.fld textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(61,184,255,.2)}
+.qnav{display:flex;gap:10px;margin-top:22px}
+.qnav .btn{height:54px}
+.qnav .next{flex:1}
+.qnav .back[hidden]{display:none}
+.bubble-w{display:flex;flex-direction:column;gap:12px}
+.chat{border-radius:28px;border:1px solid var(--line);background:#0b141a;padding:18px;position:relative;overflow:hidden}
+.chat-h{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.chat-h img{width:42px;height:42px;border-radius:50%;background:#fff;object-fit:contain;padding:4px}
+.chat-h b{display:block;font-size:15px}
+.chat-h span{font-size:12.5px;color:var(--dim)}
+.msgs{min-height:180px;padding:18px 0 4px;display:flex;flex-direction:column;justify-content:flex-end}
+.msg{align-self:flex-end;max-width:92%;background:#005c4b;color:#e9edef;border-radius:14px 14px 4px 14px;padding:10px 12px 8px;font-size:15px;line-height:1.45;white-space:pre-line;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.msg time{display:block;text-align:right;font-size:11px;color:rgba(233,237,239,.85);margin-top:4px}
+.privacy{font-size:13px;color:var(--dim);display:flex;gap:8px;align-items:flex-start}
+
+/* area */
+.area{display:grid;gap:30px;align-items:center}
+.map{position:relative;aspect-ratio:1/1;border-radius:32px;border:1px solid var(--line);background:radial-gradient(circle at 50% 50%,rgba(61,184,255,.10),transparent 62%),var(--bg2);overflow:hidden}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.ring{fill:none;stroke:rgba(255,255,255,.09)}
+.sweep{transform-box:view-box;transform-origin:50% 50%;animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--glass);font-size:15px}
+.chip.home{background:var(--grad);color:#0a0d12;font-weight:600;border-color:transparent}
+
+/* final */
+.final{text-align:center;overflow:hidden}
+.final h2{font-size:clamp(42px,9vw,110px);max-width:12ch;margin:0 auto}
+.final .lead{margin:20px auto 0}
+.final .row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
+footer{border-top:1px solid var(--line);padding:44px 0 120px;font-size:14px;color:var(--dim)}
+.ft{display:grid;gap:26px}
+.ft b{color:var(--ink);font-weight:600}
+.ft a:hover{color:#fff}
+.ft-l{display:flex;flex-direction:column;gap:6px}
+.fine{margin-top:26px;font-size:12.5px;color:rgba(244,247,251,.5);line-height:1.6}
+
+/* sticky mobile */
+.sticky{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:50;display:flex;gap:8px;padding:8px;border-radius:999px;background:rgba(10,13,19,.78);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,.14);box-shadow:0 20px 50px -10px rgba(0,0,0,.7);transform:translateY(140%);transition:transform .5s var(--ease)}
+.sticky.on{transform:none}
+.sticky .btn{height:52px}
+.sticky .btn-p{flex:1}
+.sticky .btn-i{width:52px}
+
+/* reveal */
+.rv-in{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv-in.on{opacity:1;transform:none}
+
+@media (min-width:640px){
+  .proof-g{grid-template-columns:repeat(3,1fr)}
+  .svc-g{grid-template-columns:1fr 1fr}
+  .card.feat{grid-row:span 2;min-height:100%}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .step{padding:84px 26px 28px}
+  .opts{grid-template-columns:repeat(3,1fr)}
+}
+@media (min-width:960px){
+  body{font-size:18px}
+  .nav-l{display:flex}
+  .nav-cta{display:inline-flex}
+  .hero{align-items:center}
+  .hero-media{left:auto;right:max(var(--pad),calc((100vw - var(--max))/2 + var(--pad)));top:110px;bottom:40px;width:min(36vw,440px);border-radius:36px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 120px -30px rgba(61,184,255,.35)}
+  .hero-shade{background:radial-gradient(1000px 700px at 85% 20%,rgba(61,184,255,.14),transparent 60%),radial-gradient(800px 600px at 10% 90%,rgba(247,138,200,.12),transparent 60%)}
+  .hero-in .wrap{padding-right:calc(min(36vw,440px) + var(--pad) + 56px)}
+  .hero h1{font-size:clamp(52px,4.8vw,76px);max-width:none}
+  .hero-in{padding:120px 0 60px}
+  .hero-meta{max-width:560px}
+  .hero-cta{max-width:560px}
+  .hero-cta .btn-p{flex:0 1 auto}
+  .svc-g{grid-template-columns:1.15fr 1fr 1fr}
+  .card.feat{grid-row:span 2}
+  .qb{grid-template-columns:1.25fr 1fr;align-items:start}
+  .bubble-w{position:sticky;top:100px}
+  .area{grid-template-columns:1fr 1fr;gap:60px}
+  .rv-ctrl{display:flex}
+  .ft{grid-template-columns:1.4fr 1fr 1fr}
+  .sticky{display:none}
+  footer{padding-bottom:50px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .frost{display:none}
+  .sheen{background-position:0 0}
+  .rv-in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Effortclean GmbH, zum Seitenanfang"><img src="assets/img/logo.webp" width="58" height="40" alt="Effortclean GmbH Logo"></a>
+    <nav class="nav-l" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#offerte">Offerte</a>
+      <a href="#gebiet">Gebiet</a>
+    </nav>
+    <div class="nav-r">
+      <a class="btn btn-g btn-i" href="tel:+41786951661" aria-label="Anrufen: 078 695 16 61"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      <a class="btn btn-p nav-cta" href="#offerte">Offerte anfragen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <picture>
+      <source type="image/webp" srcset="assets/img/hero-640.webp 640w, assets/img/hero-960.webp 960w, assets/img/hero-1132.webp 1132w" sizes="(min-width:960px) 40vw, 100vw">
+      <img src="assets/img/hero-960.jpg" srcset="assets/img/hero-640.jpg 640w, assets/img/hero-960.jpg 960w, assets/img/hero-1132.jpg 1132w" sizes="(min-width:960px) 40vw, 100vw" width="1132" height="2000" alt="Mitarbeiter von Effortclean reinigt eine grosse Glasfront" fetchpriority="high">
+    </picture>
+    <div class="frost" aria-hidden="true"></div>
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="wrap">
+      <a class="rate" href="https://www.google.com/maps/search/Effortclean%20GmbH%2C%20Talstrasse%207%2C%203053%20M%C3%BCnchenbuchsee%20BE" target="_blank" rel="noopener">
+        <svg viewBox="0 0 48 48" width="16" height="16" aria-hidden="true"><path fill="#FFC107" d="M43.6 20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-4z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.7-.4-4z"/></svg>
+        <span class="st" aria-hidden="true">★★★★★</span><span>5,0 · 13 Google-Bewertungen</span>
+      </a>
+      <h1><span class="sheen">Ihre Reinigung in Münchenbuchsee.</span></h1>
+      <p class="sub">Fenster, Wohnung, Büro und Hauswartung. Sie schreiben uns, wir machen es sauber.</p>
+      <div class="hero-meta"><span>Talstrasse 7, Münchenbuchsee</span><a href="tel:+41786951661">078 695 16 61</a></div>
+      <div class="hero-cta" id="heroCta">
+        <a class="btn btn-p" href="https://wa.me/41786951661?text=Gr%C3%BCezi%20Effortclean%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%20eine%20Reinigung." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.5-8.5z"/></svg>
+          Offerte per WhatsApp
+        </a>
+        <a class="btn btn-g btn-i" href="tel:+41786951661" aria-label="Anrufen: 078 695 16 61"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+      </div>
+      <p class="micro"><span class="wa-dot" aria-hidden="true"></span>Eine kurze Nachricht genügt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof" aria-label="Auf einen Blick">
+  <div class="wrap proof-g">
+    <div class="pc rv-in"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="#ffc93d" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div><div><b>5,0 von 5</b><span>13 Bewertungen auf Google</span></div></div>
+    <div class="pc rv-in"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><div><b>GmbH</b><span>Im Handelsregister eingetragen</span></div></div>
+    <div class="pc rv-in"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><b>Vor Ort</b><span>Talstrasse 7, Münchenbuchsee</span></div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="leistungen">
+  <div class="aur a1" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="kick">Leistungen</div>
+    <h2 class="rv-in">Was wir für Sie<br><span class="gt">sauber machen.</span></h2>
+    <div class="svc-g">
+      <article class="card feat rv-in">
+        <img src="assets/img/detail.webp" width="800" height="1009" alt="Nahaufnahme: Fensterreinigung mit Handschuh und Tuch" loading="lazy" decoding="async">
+        <div class="fx">
+          <div class="n">01 · FENSTER</div>
+          <h3>Fensterreinigung</h3>
+          <p>Fenster und Glastüren. Damit Sie wieder klar sehen.</p>
+        </div>
+      </article>
+      <article class="card rv-in">
+        <div class="glyph" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div>
+        <div class="n">02 · REINIGUNG</div>
+        <h3>Wohnung, Haus, Büro</h3>
+        <p>Reinigung aller Art. Gründlich, auch in den Ecken.</p>
+      </article>
+      <article class="card rv-in">
+        <div class="glyph" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/><path d="M9 10h.01M15 10h.01"/></svg></div>
+        <div class="n">03 · HAUSWARTUNG</div>
+        <h3>Hauswartung</h3>
+        <p>Damit Ihr Haus und Ihre Liegenschaft gepflegt bleiben.</p>
+      </article>
+      <article class="card rv-in">
+        <div class="glyph" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12h8M12 8v8"/></svg></div>
+        <div class="n">04 · UNTERHALT</div>
+        <h3>Unterhalt und Facility-Management</h3>
+        <p>Ein Ansprechpartner für den Unterhalt Ihres Gebäudes.</p>
+      </article>
+      <article class="card rv-in">
+        <div class="glyph" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+        <div class="n">05 · IHR WUNSCH</div>
+        <h3>Etwas anderes?</h3>
+        <p>Fragen Sie einfach. Wir sagen Ihnen ehrlich, ob wir helfen können.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORDS -->
+<section aria-labelledby="w-h" style="padding-top:20px">
+  <div class="wrap">
+    <div class="kick" id="w-h">In den Worten unserer Kunden</div>
+    <div class="words" id="words">
+      <span class="word">zuverlässig.</span>
+      <span class="word">pünktlich.</span>
+      <span class="word">gründlich.</span>
+    </div>
+    <p class="words-note">Diese drei Worte stehen immer wieder in den Google-Bewertungen über Effortclean.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="bewertungen" style="padding-top:40px">
+  <div class="aur a2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv-top">
+      <div>
+        <div class="kick">Echte Google-Bewertungen</div>
+        <h2 class="rv-in">Das sagen Kunden.</h2>
+      </div>
+      <div class="rv-score rv-in"><b>5,0</b><div><span class="st" aria-hidden="true">★★★★★</span><br><span style="color:var(--dim);font-size:15px">13 Bewertungen auf Google</span></div></div>
+    </div>
+    <div class="rv-row" id="rvRow" tabindex="0" aria-label="Bewertungen, seitlich scrollen">
+      <figure class="rv"><span class="st" aria-label="5 von 5 Sternen">★★★★★</span><blockquote><q>Top-Reinigung! Sehr seriös, zuverlässig und schnell. Das Preis-Leistungs-Verhältnis ist hervorragend und die Arbeit wurde zu meiner vollsten Zufriedenheit ausgeführt. Ich kann den Service im Raum Bern uneingeschränkt weiterempfehlen.</q></blockquote><figcaption class="who"><span class="av" aria-hidden="true">M</span><span><b>M.</b>Google-Bewertung</span></figcaption></figure>
+      <figure class="rv"><span class="st" aria-label="5 von 5 Sternen">★★★★★</span><blockquote><q>Das Team arbeitet zuverlässig, freundlich und sehr gründlich. Die Reinigung wurde pünktlich und in hoher Qualität durchgeführt.</q></blockquote><figcaption class="who"><span class="av" aria-hidden="true">E</span><span><b>Egzon Pulaj</b>Google-Bewertung</span></figcaption></figure>
+      <figure class="rv"><span class="st" aria-label="5 von 5 Sternen">★★★★★</span><blockquote><q>Die Abwicklung von der Offerte bis zur finalen Reinigung verlief professionell und reibungslos. Das Team war stets freundlich, pünktlich und sehr zuverlässig.</q></blockquote><figcaption class="who"><span class="av" aria-hidden="true">R</span><span><b>Rojhat Cevik</b>Google-Bewertung</span></figcaption></figure>
+      <figure class="rv"><span class="st" aria-label="5 von 5 Sternen">★★★★★</span><blockquote><q>Alle Arbeiten wurden sauber und professionell ausgeführt, und auf individuelle Wünsche wurde jederzeit eingegangen.</q></blockquote><figcaption class="who"><span class="av" aria-hidden="true">D</span><span><b>d m</b>Google-Bewertung</span></figcaption></figure>
+      <figure class="rv"><span class="st" aria-label="5 von 5 Sternen">★★★★★</span><blockquote><q>Sehr zuverlässiger und professioneller Service. Die Arbeiten wurden sauber, pünktlich und zu meiner vollsten Zufriedenheit ausgeführt.</q></blockquote><figcaption class="who"><span class="av" aria-hidden="true">T</span><span><b>Tiraf</b>Google-Bewertung</span></figcaption></figure>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+      <a class="link" href="https://www.google.com/maps/search/Effortclean%20GmbH%2C%20Talstrasse%207%2C%203053%20M%C3%BCnchenbuchsee%20BE" target="_blank" rel="noopener">Alle Bewertungen auf Google lesen <span aria-hidden="true">→</span></a>
+      <div class="rv-ctrl"><button type="button" id="rvPrev" aria-label="Vorherige Bewertung"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button type="button" id="rvNext" aria-label="Nächste Bewertung"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section style="padding-top:40px">
+  <div class="wrap">
+    <div class="kick">So einfach geht's</div>
+    <h2 class="rv-in">Drei Schritte<br><span class="gt">zum sauberen Ergebnis.</span></h2>
+    <div class="steps">
+      <div class="step rv-in"><h3>Schreiben oder anrufen</h3><p>Sagen Sie kurz, was sauber werden soll.</p></div>
+      <div class="step rv-in"><h3>Offerte erhalten</h3><p>Sie bekommen eine klare Offerte.</p></div>
+      <div class="step rv-in"><h3>Zurücklehnen</h3><p>Wir reinigen. Sie geniessen das Ergebnis.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE BUILDER -->
+<section id="offerte">
+  <div class="aur a1" aria-hidden="true" style="top:20%;left:-200px;right:auto;opacity:.18"></div>
+  <div class="wrap">
+    <div class="kick">Offerte anfragen</div>
+    <h2 class="rv-in">Ihre Offerte<br><span class="gt">in 30 Sekunden.</span></h2>
+    <p class="lead">Vier kurze Fragen. Dann geht Ihre Anfrage per WhatsApp direkt an Effortclean.</p>
+    <div class="qb">
+      <form class="panel" id="qform" novalidate>
+        <div class="prog" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        <fieldset class="qstep on" data-step="0">
+          <legend>Was soll sauber werden?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="was" value="Wohnung oder Haus" checked><span>Wohnung / Haus<small>Reinigung</small></span></label>
+            <label class="opt"><input type="radio" name="was" value="Büro oder Gewerbe"><span>Büro / Gewerbe<small>Reinigung</small></span></label>
+            <label class="opt"><input type="radio" name="was" value="Fenster"><span>Fenster<small>und Glastüren</small></span></label>
+            <label class="opt"><input type="radio" name="was" value="Hauswartung"><span>Hauswartung<small>Liegenschaft</small></span></label>
+            <label class="opt"><input type="radio" name="was" value="Unterhalt"><span>Unterhalt<small>Gebäude</small></span></label>
+            <label class="opt"><input type="radio" name="was" value="etwas anderes"><span>Anderes<small>Fragen Sie uns</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qstep" data-step="1">
+          <legend>Wie oft?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="oft" value="einmal" checked><span>Einmal</span></label>
+            <label class="opt"><input type="radio" name="oft" value="regelmässig"><span>Regelmässig</span></label>
+            <label class="opt"><input type="radio" name="oft" value="weiss ich noch nicht"><span>Weiss noch nicht</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qstep" data-step="2">
+          <legend>Wo und wann?</legend>
+          <div class="fld"><label for="ort">Ort oder PLZ</label><input id="ort" name="ort" autocomplete="address-level2" placeholder="z. B. 3053 Münchenbuchsee"></div>
+          <div class="opts" style="margin-top:16px">
+            <label class="opt"><input type="radio" name="wann" value="so bald wie möglich" checked><span>So bald wie möglich</span></label>
+            <label class="opt"><input type="radio" name="wann" value="in den nächsten Wochen"><span>In den nächsten Wochen</span></label>
+            <label class="opt"><input type="radio" name="wann" value="flexibel"><span>Flexibel</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qstep" data-step="3">
+          <legend>Fast fertig.</legend>
+          <div class="fld"><label for="name">Ihr Name</label><input id="name" name="name" autocomplete="name" placeholder="Vorname Nachname"></div>
+          <div class="fld"><label for="note">Noch etwas? (optional)</label><textarea id="note" name="note" placeholder="z. B. 3½-Zimmer-Wohnung, 2. Stock"></textarea></div>
+        </fieldset>
+        <div class="qnav">
+          <button type="button" class="btn btn-g back" id="qBack" hidden>Zurück</button>
+          <button type="button" class="btn btn-p next" id="qNext">Weiter</button>
+        </div>
+      </form>
+      <div class="bubble-w">
+        <div class="chat" aria-live="polite">
+          <div class="chat-h"><img src="assets/img/logo.webp" width="42" height="42" alt=""><div><b>Effortclean GmbH</b><span>078 695 16 61 · WhatsApp</span></div></div>
+          <div class="msgs"><div class="msg" id="msg"></div></div>
+        </div>
+        <p class="privacy"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="flex:none;margin-top:2px"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Diese Seite speichert nichts. Ihre Nachricht öffnet sich in Ihrem WhatsApp, Sie schicken sie selbst ab.</p>
+        <p class="privacy">Kein WhatsApp? <a class="link" id="mailLink" href="mailto:info@effortclean.ch">Per E-Mail senden</a> oder <a class="link" href="tel:+41786951661">anrufen</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section id="gebiet" style="padding-top:40px">
+  <div class="wrap area">
+    <div>
+      <div class="kick">Gebiet</div>
+      <h2 class="rv-in">Zuhause in<br><span class="gt">Münchenbuchsee.</span></h2>
+      <p class="lead">Unterwegs im Raum Bern. Ihr Ort fehlt? Fragen Sie einfach.</p>
+      <div class="chips">
+        <span class="chip home">Münchenbuchsee</span>
+        <span class="chip">Zollikofen</span><span class="chip">Moosseedorf</span><span class="chip">Urtenen-Schönbühl</span><span class="chip">Jegenstorf</span><span class="chip">Diemerswil</span><span class="chip">Kirchlindach</span><span class="chip">Schüpfen</span><span class="chip">Bern</span>
+      </div>
+    </div>
+    <div class="map rv-in" role="img" aria-label="Schematische Karte: Münchenbuchsee in der Mitte, Nachbarorte rundherum">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#3db8ff"/><stop offset="1" stop-color="#f78ac8"/></linearGradient>
+          <radialGradient id="sw" cx="0" cy="0" r="1"><stop offset="0" stop-color="#3db8ff" stop-opacity=".35"/><stop offset="1" stop-color="#3db8ff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <circle class="ring" cx="200" cy="200" r="60"/><circle class="ring" cx="200" cy="200" r="115"/><circle class="ring" cx="200" cy="200" r="170"/>
+        <g class="sweep"><path d="M200 200 L200 30 A170 170 0 0 1 320 80 Z" fill="url(#sw)"/></g>
+        <g font-family="Inter,sans-serif" font-size="12" fill="rgba(244,247,251,.75)">
+          <circle cx="214" cy="257" r="4" fill="#fff"/><text x="222" y="261">Zollikofen</text>
+          <circle cx="256" cy="211" r="4" fill="#fff"/><text x="230" y="232">Moosseedorf</text>
+          <circle cx="283" cy="196" r="4" fill="#fff"/><text x="262" y="184">Urtenen-Schönbühl</text>
+          <circle cx="297" cy="134" r="4" fill="#fff"/><text x="268" y="122">Jegenstorf</text>
+          <circle cx="75" cy="161" r="4" fill="#fff"/><text x="52" y="149">Schüpfen</text>
+          <circle cx="140" cy="257" r="4" fill="#fff"/><text x="80" y="276">Kirchlindach</text>
+          <circle cx="156" cy="209" r="4" fill="#fff"/><text x="92" y="226">Diemerswil</text>
+          <circle cx="194" cy="380" r="5" fill="#fff"/><text x="206" y="384">Bern</text>
+        </g>
+        <circle cx="200" cy="200" r="22" fill="url(#g1)" opacity=".25"><animate attributeName="r" values="14;30;14" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="200" cy="200" r="9" fill="url(#g1)"/>
+        <text x="200" y="176" text-anchor="middle" font-family="Inter Tight,Inter,sans-serif" font-weight="700" font-size="15" fill="#fff">Münchenbuchsee</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="aur a1" aria-hidden="true" style="left:50%;right:auto;transform:translateX(-50%);top:10%"></div>
+  <div class="wrap">
+    <h2 class="rv-in">Bereit, wenn <span class="gt">Sie es sind.</span></h2>
+    <p class="lead">Schreiben Sie uns auf WhatsApp oder rufen Sie an.</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://wa.me/41786951661?text=Gr%C3%BCezi%20Effortclean%2C%20ich%20h%C3%A4tte%20gerne%20eine%20Offerte%20f%C3%BCr%20eine%20Reinigung." target="_blank" rel="noopener"><span class="wa-dot" aria-hidden="true"></span>Offerte per WhatsApp</a>
+      <a class="btn btn-g" href="tel:+41786951661">078 695 16 61</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="ft-l"><img src="assets/img/logo.webp" width="58" height="40" alt="Effortclean GmbH" style="height:40px;width:auto;margin-bottom:10px;align-self:flex-start" loading="lazy"><b>Effortclean GmbH</b><span>Reinigung, Hauswartung und Unterhalt</span></div>
+      <div class="ft-l"><b>Kontakt</b><a href="tel:+41786951661">078 695 16 61</a><a href="mailto:info@effortclean.ch">info@effortclean.ch</a><a href="https://wa.me/41786951661" target="_blank" rel="noopener">WhatsApp</a></div>
+      <div class="ft-l"><b>Adresse</b><span>Talstrasse 7<br>3053 Münchenbuchsee BE</span><a class="link" style="align-self:flex-start;margin-top:4px" href="https://www.google.com/maps/dir/?api=1&amp;destination=Talstrasse%207%2C%203053%20M%C3%BCnchenbuchsee" target="_blank" rel="noopener">Route planen <span aria-hidden="true">→</span></a></div>
+    </div>
+    <p class="fine">UID CHE-326.495.538 · Fotos, Logo und Bewertungen: Google-Profil von Effortclean GmbH. Impressum und Datenschutz folgen.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <a class="btn btn-p" href="#offerte"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.5-8.5z"/></svg>Offerte anfragen</a>
+  <a class="btn btn-g btn-i" href="tel:+41786951661" aria-label="Anrufen: 078 695 16 61"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const nav=$('#nav'),sticky=$('#sticky'),heroCta=$('#heroCta'),off=$('#offerte');
+let heroOut=false,inOff=false;
+const upd=()=>{nav.classList.toggle('s',scrollY>40);sticky.classList.toggle('on',heroOut&&!inOff)};
+addEventListener('scroll',upd,{passive:true});upd();
+if('IntersectionObserver' in window){
+  new IntersectionObserver(e=>{heroOut=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;upd()}).observe(heroCta);
+  new IntersectionObserver(e=>{inOff=e[0].isIntersecting;upd()},{threshold:.25}).observe(off);
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  $$('.rv-in').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+  const wio=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){$$('.word').forEach((w,i)=>setTimeout(()=>w.classList.add('on'),i*450));wio.disconnect()}}),{threshold:.5});
+  wio.observe($('#words'));
+}else{$$('.rv-in,.word').forEach(e=>e.classList.add('on'));heroOut=true}
+// reviews arrows
+const row=$('#rvRow');
+$('#rvPrev').onclick=()=>row.scrollBy({left:-420,behavior:'smooth'});
+$('#rvNext').onclick=()=>row.scrollBy({left:420,behavior:'smooth'});
+// quote builder
+const f=$('#qform'),steps=$$('.qstep'),bars=$$('.prog i'),next=$('#qNext'),back=$('#qBack'),msg=$('#msg'),mail=$('#mailLink');
+let s=0;
+const val=n=>{const el=f.elements[n];return el?(el.value||'').trim():''};
+const text=()=>{
+  let t='Grüezi Effortclean, ich hätte gerne eine Offerte.\n\nWas: '+val('was')+'\nWie oft: '+val('oft');
+  if(val('ort'))t+='\nOrt: '+val('ort');
+  t+='\nWann: '+val('wann');
+  if(val('note'))t+='\nInfo: '+val('note');
+  t+='\n\n'+(val('name')?'Freundliche Grüsse\n'+val('name'):'Freundliche Grüsse');
+  return t};
+const render=()=>{const t=text();const d=new Date();msg.innerHTML='';msg.append(t);const tm=document.createElement('time');tm.textContent=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');msg.append(tm);
+  mail.href='mailto:info@effortclean.ch?subject='+encodeURIComponent('Offerte-Anfrage')+'&body='+encodeURIComponent(t)};
+const go=n=>{s=n;steps.forEach((x,i)=>x.classList.toggle('on',i===s));bars.forEach((b,i)=>b.classList.toggle('on',i<=s));back.hidden=s===0;
+  next.innerHTML=s===steps.length-1?'Per WhatsApp senden':'Weiter';
+  const first=steps[s].querySelector('input:checked,input,textarea');if(first&&n!==0)first.focus({preventScroll:true})};
+f.addEventListener('input',render);f.addEventListener('change',render);
+next.onclick=()=>{if(s<steps.length-1){go(s+1)}else{window.open('https://wa.me/41786951661?text='+encodeURIComponent(text()),'_blank','noopener')}};
+back.onclick=()=>go(Math.max(0,s-1));
+f.addEventListener('submit',e=>e.preventDefault());
+render();
+})();
+</script>
+</body>
+</html>
