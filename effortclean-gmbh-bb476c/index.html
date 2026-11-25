@@ -190,17 +190,30 @@ legend{font:700 24px/1.15 "Inter Tight",sans-serif;letter-spacing:-.025em;margin
 
 /* area */
 .area{display:grid;gap:30px;align-items:center}
-.map{position:relative;aspect-ratio:1/1;border-radius:32px;border:1px solid var(--line);background:radial-gradient(circle at 50% 50%,rgba(61,184,255,.10),transparent 62%),var(--bg2);overflow:hidden}
-.map svg{position:absolute;inset:0;width:100%;height:100%}
-.ring{fill:none;stroke:rgba(255,255,255,.09)}
-.sweep{transform-box:view-box;transform-origin:50% 50%;animation:spin 9s linear infinite}
+.map{position:relative;aspect-ratio:1/1;border-radius:32px;border:1px solid var(--line);background:#0b0f17;overflow:hidden;box-shadow:0 40px 100px -40px rgba(61,184,255,.35)}
+.map-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.map::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 52% 51%,transparent 35%,rgba(6,8,13,.55) 100%)}
+.map svg{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.ring{fill:none;stroke:rgba(127,208,255,.22);stroke-width:2;stroke-dasharray:4 8}
+.sweep{transform-box:view-box;animation:spin 8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+.labels text,.map .home{font-family:Inter,sans-serif;font-size:27px;font-weight:500;fill:#e9f1fb;paint-order:stroke;stroke:rgba(6,8,13,.9);stroke-width:7px;stroke-linejoin:round}
+.map .home{font-family:"Inter Tight",Inter,sans-serif;font-weight:700;font-size:34px}
+.dot{fill:#fff;stroke:rgba(6,8,13,.8);stroke-width:3}
+.pulse{opacity:.35;transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.9);opacity:.08}}
+.osm{position:absolute;right:10px;top:8px;z-index:2;font-size:11px;color:rgba(244,247,251,.85);background:rgba(6,8,13,.7);padding:3px 8px;border-radius:8px}
+.osm:hover{color:#fff}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
 .chip{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--glass);font-size:15px}
 .chip.home{background:var(--grad);color:#0a0d12;font-weight:600;border-color:transparent}
 
 /* final */
-.final{text-align:center;overflow:hidden}
+.final{text-align:center;overflow:hidden;isolation:isolate;padding:clamp(110px,16vw,190px) 0}
+.final-bg{position:absolute;inset:0;z-index:-1}
+.final-bg img{width:100%;height:100%;object-fit:cover;object-position:22% 40%}
+.final::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,var(--bg) 0%,rgba(6,8,13,.72) 22%,rgba(6,8,13,.62) 50%,rgba(6,8,13,.8) 80%,var(--bg) 100%),radial-gradient(60% 50% at 50% 50%,rgba(6,8,13,.35),transparent)}
+.final .lead{color:rgba(244,247,251,.86);max-width:40ch}
 .final h2{font-size:clamp(42px,9vw,110px);max-width:12ch;margin:0 auto}
 .final .lead{margin:20px auto 0}
 .final .row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
@@ -487,35 +500,28 @@ footer{border-top:1px solid var(--line);padding:44px 0 120px;font-size:14px;colo
         <span class="chip">Zollikofen</span><span class="chip">Moosseedorf</span><span class="chip">Urtenen-Schönbühl</span><span class="chip">Jegenstorf</span><span class="chip">Diemerswil</span><span class="chip">Kirchlindach</span><span class="chip">Schüpfen</span><span class="chip">Bern</span>
       </div>
     </div>
-    <div class="map rv-in" role="img" aria-label="Schematische Karte: Münchenbuchsee in der Mitte, Nachbarorte rundherum">
-      <svg viewBox="0 0 400 400" aria-hidden="true">
+    <div class="map rv-in" role="img" aria-label="Karte: Effortclean an der Talstrasse 7 in Münchenbuchsee, mit den Nachbarorten bis Bern">
+      <picture><source type="image/webp" srcset="assets/img/map-720.webp 720w, assets/img/map-1100.webp 1100w" sizes="(min-width:960px) 540px, 92vw"><img class="map-img" src="assets/img/map-720.webp" width="720" height="720" alt="" loading="lazy" decoding="async"></picture>
+      <svg viewBox="0 0 1000 1000" aria-hidden="true">
         <defs>
           <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#3db8ff"/><stop offset="1" stop-color="#f78ac8"/></linearGradient>
-          <radialGradient id="sw" cx="0" cy="0" r="1"><stop offset="0" stop-color="#3db8ff" stop-opacity=".35"/><stop offset="1" stop-color="#3db8ff" stop-opacity="0"/></radialGradient>
+          <linearGradient id="sw" x1="0" y1="1" x2="0.6" y2="0"><stop offset="0" stop-color="#3db8ff" stop-opacity=".55"/><stop offset="1" stop-color="#3db8ff" stop-opacity="0"/></linearGradient>
         </defs>
-        <circle class="ring" cx="200" cy="200" r="60"/><circle class="ring" cx="200" cy="200" r="115"/><circle class="ring" cx="200" cy="200" r="170"/>
-        <g class="sweep"><path d="M200 200 L200 30 A170 170 0 0 1 320 80 Z" fill="url(#sw)"/></g>
-        <g font-family="Inter,sans-serif" font-size="12" fill="rgba(244,247,251,.75)">
-          <circle cx="214" cy="257" r="4" fill="#fff"/><text x="222" y="261">Zollikofen</text>
-          <circle cx="256" cy="211" r="4" fill="#fff"/><text x="230" y="232">Moosseedorf</text>
-          <circle cx="283" cy="196" r="4" fill="#fff"/><text x="262" y="184">Urtenen-Schönbühl</text>
-          <circle cx="297" cy="134" r="4" fill="#fff"/><text x="268" y="122">Jegenstorf</text>
-          <circle cx="75" cy="161" r="4" fill="#fff"/><text x="52" y="149">Schüpfen</text>
-          <circle cx="140" cy="257" r="4" fill="#fff"/><text x="80" y="276">Kirchlindach</text>
-          <circle cx="156" cy="209" r="4" fill="#fff"/><text x="92" y="226">Diemerswil</text>
-          <circle cx="194" cy="380" r="5" fill="#fff"/><text x="206" y="384">Bern</text>
-        </g>
-        <circle cx="200" cy="200" r="22" fill="url(#g1)" opacity=".25"><animate attributeName="r" values="14;30;14" dur="3s" repeatCount="indefinite"/></circle>
-        <circle cx="200" cy="200" r="9" fill="url(#g1)"/>
-        <text x="200" y="176" text-anchor="middle" font-family="Inter Tight,Inter,sans-serif" font-weight="700" font-size="15" fill="#fff">Münchenbuchsee</text>
+        <circle class="ring" cx="518.8" cy="514.3" r="150"/><circle class="ring" cx="518.8" cy="514.3" r="300"/><circle class="ring" cx="518.8" cy="514.3" r="450"/>
+        <g class="sweep" style="transform-origin:518.8px 514.3px"><path d="M518.8 514.3 L518.8 54.299999999999955 A460 460 0 0 1 844.1 189.0 Z" fill="url(#sw)"/><line x1="518.8" y1="514.3" x2="844.1" y2="189.0" stroke="#7fd0ff" stroke-opacity=".7" stroke-width="2"/></g>
+        <g class="labels"><circle cx="530.2" cy="658.5" r="7" class="dot"/><text x="545" y="667">Zollikofen</text><circle cx="640.4" cy="532.8" r="7" class="dot"/><text x="655" y="541">Moosseedorf</text><circle cx="714.5" cy="466.5" r="7" class="dot"/><text x="728" y="456">Urtenen-Schönbühl</text><circle cx="743.9" cy="326.8" r="7" class="dot"/><text x="758" y="335">Jegenstorf</text><circle cx="195.5" cy="390.8" r="7" class="dot"/><text x="210" y="399">Schüpfen</text><circle cx="348.0" cy="635.3" r="7" class="dot"/><text x="334" y="644" text-anchor="end">Kirchlindach</text><circle cx="507.3" cy="950.5" r="7" class="dot"/><text x="522" y="959">Bern</text><circle cx="368.7" cy="514.5" r="7" class="dot"/><text x="354" y="523" text-anchor="end">Diemerswil</text></g>
+        <circle class="pulse" cx="518.8" cy="514.3" r="26" fill="url(#g1)"/>
+        <circle cx="518.8" cy="514.3" r="13" fill="url(#g1)" stroke="#fff" stroke-width="3"/>
+        <text class="home" x="518.8" y="474.29999999999995" text-anchor="middle">Münchenbuchsee</text>
       </svg>
+      <a class="osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>
     </div>
   </div>
 </section>
 
 <!-- FINAL -->
 <section class="final">
-  <div class="aur a1" aria-hidden="true" style="left:50%;right:auto;transform:translateX(-50%);top:10%"></div>
+  <picture class="final-bg" aria-hidden="true"><source type="image/webp" srcset="assets/img/final-720.webp 720w, assets/img/final-1132.webp 1132w" sizes="100vw"><img src="assets/img/final-720.webp" width="720" height="534" alt="" loading="lazy" decoding="async"></picture>
   <div class="wrap">
     <h2 class="rv-in">Bereit, wenn <span class="gt">Sie es sind.</span></h2>
     <p class="lead">Schreiben Sie uns auf WhatsApp oder rufen Sie an.</p>
